@@ -6,5 +6,11 @@
   "repository": "https://github.com/JohnnySn0w/Arke-Vue.git",
   "author": "JohnnySn0w <michael.mahan43@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "http-server": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
