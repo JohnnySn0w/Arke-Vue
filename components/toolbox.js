@@ -1,0 +1,1 @@
+//aggregates installed software pieces and displays them in a scrollable list(expandable or hover-descriptions?)

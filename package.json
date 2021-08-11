@@ -1,0 +1,10 @@
+{
+  "name": "Arke-Vue",
+  "version": "0.0.1",
+  "description": "Vue.js code for Arke GUI",
+  "main": "index.js",
+  "repository": "https://github.com/JohnnySn0w/Arke-Vue.git",
+  "author": "JohnnySn0w <michael.mahan43@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
