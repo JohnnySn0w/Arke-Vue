@@ -1,12 +1,12 @@
 const app = Vue.createApp({
     data() {
         return {
-            fileURL="",
-            projectName="",
-            arkeName="Arke",
-            arkeNameConnector=" - ",
-            arkeStartMenu="Start",
-            arkeConfigMenu="config",
+            //fileURL:"",
+            //projectName:"",
+            arkeName:"Arke",
+            arkeNameConnector:" - ",
+            arkeStartMenu:"Start",
+            arkeConfigMenu:"config",
         }
     },
     methods: {
@@ -31,8 +31,9 @@ const app = Vue.createApp({
         },
     },
     computed: {
-        title() {
-            return this.arkeName + this.arkeNameConnector + this.arkeStartMenu;
-        },
+        
     },
+    created(){
+        document.title = this.arkeName + this.arkeNameConnector + this.arkeStartMenu;
+    }
 });

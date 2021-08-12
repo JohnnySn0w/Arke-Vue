@@ -1,45 +1,30 @@
 //app startup: view, load, new, exit, recent
-app.component('product-display', {
+app.component('start-view-component', {
     props: {
-      premium: {
-        type: Boolean,
-        required: true
+      arkeName: {
+        type: String,
+        required: true,
+      },
+    },
+    data() {
+      return {
+        buttons: ['new','open','config','exit'],
+
       }
     },
     template: 
     /*html*/
-    `<div class="product-display">
-      
-        <div class="product-info">
-          <h1>{{ title }}</h1>
-  
-          <p v-if="inStock">In Stock</p>
-          <p v-else>Out of Stock</p>
-  
-          <p>Shipping: {{ shipping }}</p>
-          <ul>
-            <li v-for="detail in details">{{ detail }}</li>
-          </ul>
-  
-          <div 
-            v-for="(variant, index) in variants" 
-            :key="variant.id" 
-            @mouseover="updateVariant(index)" 
-            class="color-circle" 
-            :style="{ backgroundColor: variant.color }">
-          </div>
-          
+    `<div class="app">
+      <h1 class="heading">{{ arkeName }}</h1>
+        <div class="buttonSection colSec">
           <button 
-            class="button" 
-            :class="{ disabledButton: !inStock }" 
-            :disabled="!inStock" 
-            v-on:click="addToCart">
-            Add to Cart
+            v-for="butt in buttons"
+          >
+          {{butt}}
           </button>
         </div>
-      </div>
-      <review-list v-if="reviews.length" :reviews="reviews"></review-list>
-      <review-form @review-submitted="addReview"></review-form>
+        <div class="recents colSec"><h3>Recents</h3></div>
     </div>`,
-    
   })
+//      <div class="container">
+  //<div class="startDiv colSec" text=""/>

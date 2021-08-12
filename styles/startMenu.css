@@ -1,0 +1,44 @@
+
+button {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #f0f0f0;
+  display:block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 0;
+  position: static;
+}
+
+.container{
+  margin-left: 25vw;
+  max-width: 50vw;
+}
+
+
+.colSec{
+  display: inline-block;
+  height: 70%;
+  border-color: rgb(116, 131, 112);
+  position: fixed;
+  min-width: 50vw;
+}
+
+.buttonSection {
+  border-right-width: 1px;
+  border-style: none solid none none;
+  padding-top:5%;
+}
+
+.recents {
+  border-left-width: 1px;
+  border-style: none none none solid;
+  text-align: center;
+  left:50vw;
+}

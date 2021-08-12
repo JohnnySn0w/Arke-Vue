@@ -4,22 +4,21 @@
     <meta charset="UTF-8" />
     <title>Arke</title>
     <!-- Import Styles -->
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/startMenu.css" />
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
-      <div class="nav-bar"></div>
-      <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
+      <start-view-component :arke-name="arkeName"/>
     </div>
-
     <!-- Import App -->
     <script src="./main.js"></script>
 
-    <!-- Import Components 
-    <script src="./components/ProductDisplay.js"></script>
-    -->
+    <!-- Import Components-->
+    <script src="./components/startupView.js"></script>
+ 
 
     <!-- Mount App -->
     <script>
