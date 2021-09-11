@@ -26,5 +26,3 @@ app.component('start-view-component', {
         <div class="recents colSec"><h3>Recents</h3></div>
     </div>`,
   })
-//      <div class="container">
-  //<div class="startDiv colSec" text=""/>

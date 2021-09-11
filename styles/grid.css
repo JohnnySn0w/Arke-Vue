@@ -1,0 +1,6 @@
+.grid {
+    background-size: 10vw 10vw; /*if set to px, can do some interesting scaling with zoom*/
+    background-image:url("../images/Grid.svg");
+    height: 500vh;
+    width: 500vw;
+}
